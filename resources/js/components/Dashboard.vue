@@ -9,3 +9,28 @@
         </ul>
     </div>
 </template>
+<script>
+import axios from "axios";
+
+export default {
+    data() {
+        return {
+            purchases: [],
+        };
+    },
+    mounted() {
+        this.fetchRecentPurchases();
+    },
+    methods: {
+        async fetchRecentPurchases() {
+            try {
+                const response = await axios.get("/api/user/purchases");
+                this.purchases = response.data;
+            } catch (error) {
+                console.error("Error fetching recent purchases:", error);
+                // Handle the error accordingly
+            }
+        },
+    },
+};
+</script>
