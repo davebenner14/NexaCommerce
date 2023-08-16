@@ -9,11 +9,9 @@ Alpine.plugin(focus);
 Alpine.start();
 
 // VueJS
-import Vue from "vue";
+import { createApp } from "vue";
 import ProductList from "./components/ProductList.vue";
 
-Vue.component("product-list", ProductList);
-
-const app = new Vue({
-    el: "#app",
-});
+const app = createApp({});
+app.component("product-list", ProductList);
+app.mount("#app");
