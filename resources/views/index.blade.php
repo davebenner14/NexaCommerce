@@ -14,7 +14,6 @@
                     <li><a href="#">Features</a></li>
                     <li><a href="#">Pricing</a></li>
                     <li><a href="#">Contact</a></li>
-                    <li><a href="#">Login</a></li>
                     <li>
                         <button aria-label="Start Free Trial" class="bg-turquoise text-white py-2 px-6 rounded-full hover:bg-light-blue transition-all duration-300">
                             Start Free Trial
@@ -26,7 +25,7 @@
     </x-slot>
 
     <section id="hero" class="bg-light-blue text-center py-12 text-white">
-        <!-- ... -->
+        @include('includes.hero')
     </section>
 
     <section id="features" class="py-12">
