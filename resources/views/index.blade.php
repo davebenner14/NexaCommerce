@@ -29,7 +29,7 @@
     </section>
 
     <section id="features" class="py-12">
-        <!-- ... -->
+        @include('includes.features')
     </section>
 
     <section id="benefits" class="bg-fade-light-blue text-center py-12">
