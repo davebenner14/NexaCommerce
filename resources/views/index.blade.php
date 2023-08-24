@@ -33,7 +33,7 @@
     </section>
 
     <section id="benefits" class="bg-fade-light-blue text-center py-12">
-        <!-- ... -->
+        @include('includes.benefits')
     </section>
 
     <section id="testimonials" class="py-12">
