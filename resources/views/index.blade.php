@@ -5,79 +5,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NexaCommerce - Revolutionize Your Digital Commerce</title>
-
-    <!-- Stylesheets (e.g., CSS, TailwindCSS, Bootstrap, etc.) -->
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('dist/assets/app-6e0c2a21.css') }}">
 </head>
-<body>
+<body class="bg-white text-blue font-sans antialiased">
+
     <!-- Header & Navigation -->
-    <header>
-        <nav>
-            <a href="#">Features</a>
-            <a href="#">Pricing</a>
-            <a href="#">Contact</a>
-            <a href="#">Login</a>
-            <button>Start Free Trial</button>
-        </nav>
+    <header class="bg-fade-blue-turquoise text-white py-4">
+        <div class="container mx-auto">
+            <nav>
+                <ul class="flex justify-between items-center">
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li>
+                        <button aria-label="Start Free Trial" class="bg-turquoise text-white py-2 px-6 rounded-full hover:bg-light-blue transition-all duration-300">
+                            Start Free Trial
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="hero">
-        <h1>Revolutionize Your Digital Commerce Journey with NexaCommerce</h1>
-        <p>The only unified DCM platform that scales your business effortlessly.</p>
-        <img src="{{ asset('images/hero-image.jpg') }}" alt="NexaCommerce Image">
-        <button>Try NexaCommerce Today</button>
+    <section id="hero" class="bg-light-blue text-center py-12 text-white">
+        <h1 class="text-4xl font-bold mb-4">Revolutionize Your Digital Commerce Journey with NexaCommerce</h1>
+        <p class="mb-8">The only unified DCM platform that scales your business effortlessly.</p>
+        <img src="{{ asset('images/hero-image.jpg') }}" alt="NexaCommerce presentation" class="mb-8">
+        <button aria-label="Try NexaCommerce Today" class="bg-turquoise text-white py-2 px-6 rounded-full hover:bg-blue transition-all duration-300">
+            Try NexaCommerce Today
+        </button>
     </section>
 
     <!-- Features Overview -->
-    <section id="features">
-        <h2>Game-changing Features</h2>
-        <!-- Example feature; you can repeat this structure for other features -->
-        <div class="feature">
-            <img src="{{ asset('images/feature-icon.png') }}" alt="Feature Icon">
-            <h3>Feature Title</h3>
-            <p>Feature description here.</p>
-        </div>
+    <section id="features" class="py-12">
+        <h2 class="text-center text-3xl mb-8">Game-changing Features</h2>
+        <article class="flex items-center justify-between mb-4">
+            <img src="{{ asset('images/feature-icon.png') }}" alt="Feature Icon" class="w-1/4">
+            <div>
+                <h3 class="text-2xl mb-2">Feature Title</h3>
+                <p>Feature description here.</p>
+            </div>
+        </article>
+        <!-- Add more features similarly -->
     </section>
 
     <!-- Benefits -->
-    <section id="benefits">
-        <h2>Why Choose NexaCommerce?</h2>
+    <section id="benefits" class="bg-fade-light-blue text-center py-12">
+        <h2 class="text-3xl mb-8">Why Choose NexaCommerce?</h2>
         <p>Highlighting the main problems of the digital commerce journey that NexaCommerce solves...</p>
         <!-- Add more content or comparison charts as needed -->
     </section>
 
     <!-- Testimonials -->
-    <section id="testimonials">
-        <h2>What Our Users Say</h2>
-        <!-- Example testimonial -->
-        <div class="testimonial">
-            <p>"Testimonial content here."</p>
-            <h4>User Name, Company</h4>
-        </div>
+    <section id="testimonials" class="py-12">
+        <h2 class="text-center text-3xl mb-8">What Our Users Say</h2>
+        <blockquote class="testimonial border-turquoise border-l-4 p-4 mb-4">
+            <p class="italic mb-4">"Testimonial content here."</p>
+            <cite class="font-bold">User Name, Company</cite>
+        </blockquote>
+        <!-- Add more testimonials similarly -->
     </section>
 
     <!-- Pricing & Plans -->
-    <section id="pricing">
-        <h2>Pricing Plans</h2>
-        <!-- Example pricing plan -->
-        <div class="plan">
-            <h3>Plan Name</h3>
-            <p>Plan description and price.</p>
-            <button>Choose Plan</button>
-        </div>
+    <section id="pricing" class="bg-fade-turquoise py-12">
+        <h2 class="text-center text-3xl mb-8">Pricing Plans</h2>
+        <article class="plan text-center mb-4">
+            <h3 class="text-2xl mb-2">Plan Name</h3>
+            <p class="mb-4">Plan description and price.</p>
+            <button aria-label="Choose this plan" class="bg-blue text-white py-2 px-6 rounded-full hover:bg-light-blue transition-all duration-300">
+                Choose Plan
+            </button>
+        </article>
+        <!-- Add more plans similarly -->
     </section>
 
     <!-- Footer -->
-    <footer>
-        <nav>
-            <a href="#">Terms of Service</a>
-            <a href="#">Privacy Policy</a>
-        </nav>
-        <p>&copy; {{ date('Y') }} NexaCommerce. All rights reserved.</p>
+    <footer class="bg-fade-blue-turquoise text-white py-6">
+        <div class="container mx-auto text-center">
+            <nav>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </nav>
+            <p>&copy; {{ date('Y') }} NexaCommerce. All rights reserved.</p>
+        </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
